@@ -1,4 +1,4 @@
-package quiz4;
+package quiz6;
 
 public class Participante implements Comparable<Participante>{
 	int juegos;
