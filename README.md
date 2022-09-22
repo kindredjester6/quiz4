@@ -1,2 +1,4 @@
 # quiz6
-Leame
+
+Repositorio del quiz 6 del curso programación a objetos
+Nada más que agregar
