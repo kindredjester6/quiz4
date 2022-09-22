@@ -11,12 +11,27 @@ public class Participante implements Comparable<Participante>{
 		this.nombre=nombre;
 	}
 	@Override
-	public int compareTo(Participante player) {
+	public int compareTo(Participante OtherP) {
+		if (getJuegos() < OtherP.getJuegos()){
+			return -1;
+		}
 		
+		else if (getJuegos() > OtherP.getJuegos()){
+			return 1;
+		}
 		
+		if (getPuntos() > OtherP.getPuntos()){
+			return -1;
+		}
+		
+		else if (getPuntos() < OtherP.getPuntos()){
+			return 1;
+		}
 		
 		return 0;
+		
 	}
+	
 	public int getJuegos() {
 		return juegos;
 	}
@@ -32,10 +47,7 @@ public class Participante implements Comparable<Participante>{
 	
 	@Override
 	public String toString() {
-		return "Participante [juegos=" + juegos + ", puntos=" + puntos + ", nombre=" + nombre + "]";
+		return nombre +"	"+ juegos +"	"+ puntos;
 	}
-	
-	
-	
 	
 }
